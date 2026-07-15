@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASSIUS CLICKER</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="cas.jpg">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!--BASIC MENU-->
+    <header>
+        <div class="header">
+            <h1><i>CASSIUS CLICKER: JAVASCRIPT EDITION</i><div><button id="wipeDataBtn" commandFor="wipeModal" command="show-modal">Wipe Data</button><button id="saveBtn">Save Data</button><button id="exportBtn">Export Save</button><button id="importBtn" commandFor="importModal" command="show-modal">Import Save</button></div></h1><br>
+        </div>
+        <label for="audCount" class="audCount">AUD: <span id="audCount">0</span></label><br>
+        <label for="nzdCount" class="nzdCount" hidden>NZD: <span id="nzdCount">0</span></label><br>
+        <label for="btcCount" class="btcCount" hidden>BTC: <span id="btcCount">0</span></label>
+    </header>
+
+    <div class="main">
+        <button id="clicker"><img src="cas.jpg" width="50%" height="50%"></button>
+    </div>
+
+    <nav class="shops">
+        <h1><i>SHOPS</i></h1>
+        <button id="audShopBtn">AU Shop</button> <button id="nzdShopBtn" hidden>NZ Shop</button><button id="btcShopBtn" hidden>Black Market</button><a href="https://scratch.mit.edu/projects/1244634401/" id="ana">Play the Scratch Version!</a>
+    </nav>
+
+    <!--EVERYTHING BEYOND THIS LINE IS HIDDEN BY DEFAULT-->
+
+    <!--MODALS-->
+    <dialog id="wipeModal" class="modal">
+        <img src="images.jpg" width="120px" height="fit-content">
+        <p>noooooo, dont wipe your save. nooo, pleaaaase, dooooont</p><br>
+        <div class="modalBtn">
+            <button id="exitWipe" commandFor="wipeModal" command="close">ok i wont</button><button id="confirmWipe">pak yu bradar</button>
+        </div>
+    </dialog>
+
+    <dialog id="importModal" class="modal">
+        <h2>IMPORT SAVE</h2><br>
+        <p>Please add the JSON save file.</p><br>
+        <input id="importInput" type="file" accept=".json">
+        <button commandFor="importModal" command="close" id="closeImportBtn">X</button>
+    </dialog>
+
+    <!--AUDIO-->
+    <audio id="clickSFX" src="pop.wav"></audio>
+    <audio id="bgSong"></audio>
+
+</body>
+</html>

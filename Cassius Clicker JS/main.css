@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+dialog:open {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    display: flex;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+dialog {
+    background-color: #fff;
+    margin: auto;
+    align-items: center;
+    width: 542px;
+    height: fit-content;
+    padding: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+/* CLASSES & IDS */
+
+.ana {
+    margin-top: 55px;
+    color: #000;
+}
+
+.modalBtns {
+    display: flex;
+    gap: 20px;
+}
+
+#confirmWipe {
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: rgb(255, 0, 0);
+    padding: 1px;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#exitWipe {
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+    width: fit-content;
+    height: 20px;
+    color: black;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.2525);
+    display: flex;
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main {
+    flex: 1;              /* grow to fill all remaining vertical space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clicker img {
+    width: 400px;
+    height: auto;
+    border: 5px solid #000000;
+}
+
+#clicker:active img {
+      animation: clickAnimation 0.2s ease-in-out;
+}
+
+.audCount {
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: rgb(44, 169, 207);
+    padding: 1px;
+    width: fit-content;
+    height: 20px;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.nzdCount {
+    margin-left: 10px;
+    background-color: rgb(255, 0, 0);
+    padding: 1px;
+    width: fit-content;
+    height: 20px;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.btcCount {
+    margin-left: 10px;
+    background-color: rgb(0, 0, 0);
+    padding: 1px;
+    width: fit-content;
+    height: 20px;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.shops {
+    background-color: rgba(0, 0, 0, 0.2525);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+#audShopBtn {
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: rgb(44, 169, 207);
+    padding: 1px;
+    width: fit-content;
+    height: 20px;
+    color: white;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#nzdShopBtn {
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: rgb(255, 0, 0);
+    padding: 1px;
+    width: fit-content;
+    height: 20px;
+    color: white;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#btcShopBtn {
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 1px;
+    width: fit-content;
+    height: 20px;
+    color: white;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#wipeDataBtn {
+    margin-left: 2px;
+    margin-top: 2px;
+    background-color: rgb(217, 217, 217);
+    padding: 1px;
+    width: fit-content;
+    height: 20px;
+    color: rgb(255, 0, 0);
+    border: 2px solid #eeeeee;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#saveBtn {
+    margin-left: 2px;
+    margin-top: 2px;
+    background-color: rgb(217, 217, 217);
+    padding: 1px;
+    width: fit-content;
+    height: 20px;
+    color: rgb(0, 0, 0);
+    border: 2px solid #eeeeee;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#exportBtn {
+    margin-left: 2px;
+    margin-top: 2px;
+    background-color: rgb(217, 217, 217);
+    padding: 1px;
+    width: fit-content;
+    height: 20px;
+    color: rgb(0, 0, 0);
+    border: 2px solid #eeeeee;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#importBtn {
+    margin-left: 2px;
+    margin-top: 2px;
+    background-color: rgb(217, 217, 217);
+    padding: 1px;
+    width: fit-content;
+    height: 20px;
+    color: rgb(0, 0, 0);
+    border: 2px solid #eeeeee;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#closeImportBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#closeImportBtn:hover {
+    color: red;
+}
+
+#importModal {
+    width: 490px;
+    height: 245px;
+}
+
+/* JS-REQ CLASSES */
+.white-text {
+    color: white;
+}
+
+/* ATTRIBUTES */
+[hidden] {
+    display: none !important;
+}
+
+/* ANIMATIONS */
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.50);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

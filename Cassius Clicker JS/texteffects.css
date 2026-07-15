@@ -1,0 +1,16 @@
+/* TEXT EFFECTS */
+.sparkle {
+    --glow-colour: #000;
+    animation: sparkle 2s ease-in-out infinite alternate;
+}
+
+/* KEYFRAME ANIMATIONS */
+
+@keyframes sparkle {
+    from {
+        text-shadow: 0 0 5px var(--glow-colour), 0 0 10px var(--glow-colour);
+    }
+    to {
+        text-shadow: 0 0 15px var(--glow-colour), 0 0 25px var(--glow-colour);
+    }
+}
