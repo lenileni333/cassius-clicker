@@ -1,0 +1,27 @@
+body {background-color: #ffffff;}
+
+.needBG {
+    background-color: white;
+}
+
+.upgrades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.upgrade {
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+    height: 200px;
+    background-color: #cccccc;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
+}
+
+.upgrade p {
+    margin: 2px 0;
+}

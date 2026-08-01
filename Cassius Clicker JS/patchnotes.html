@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- STYLES -->
+     <style>
+        nav {
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background-color: rgb(189, 154, 1);
+            box-shadow: 0px -5px 5px rgb(147, 106, 1);
+        }
+    </style>
+     <style>*{ margin:0;padding:0;box-sizing:border-box;}body{color:white;}</style>
+    <style>body{background-color:rgb(166, 136, 0);}#main{margin-top: 30px;}</style>
+    <style>
+        .header {
+            background-color: rgb(189, 154, 1);
+            display: flex;
+            padding: 10px;
+            box-shadow: 0px 5px 5px rgb(147, 106, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="h1"><i>CASSIUS CLICKER: JAVASCRIPT EDITION</i></h1>
+    </div>
+    <div id="main">
+        <article>
+            <h3>What's New:</h3>
+            <p
+            >X/X/2026<br>
+            <li>
+                <ul>Added Black Market</ul>
+                <ul>Added Patch Notes</ul>
+            </li>
+            </p>
+        </article>
+    </div>
+    <nav>
+        <div id="PNbuttons">
+            <button id="indexBtn">Back to Game</button>
+        </div>
+    </nav>
+    <!-- SCRIPTS -->
+     <script>
+        const button = document.getElementById("indexBtn");
+        button.addEventListener("click", ( ) => {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
